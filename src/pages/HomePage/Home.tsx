@@ -1,10 +1,17 @@
 import css from './Home.module.css';
+import { About } from '../../components/About/About';
+import { Services } from '../../components/Services/Services';
+import { WhyUs } from '../../components/WhyUs/WhyUs';
+import { Barbers } from '../../components/Barbers/Barbers';
 
 export const Home = () => {
   return (
     <>
       <div className={css.container}>
-        <h1 className={css.title}>HELLO WORLD</h1>
+        <About />
+        <Services />
+        <WhyUs />
+        <Barbers />
       </div>
     </>
   );

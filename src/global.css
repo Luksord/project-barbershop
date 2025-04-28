@@ -1,14 +1,20 @@
 :root {
-  --title: #2e2f42;
-  --text: #434455;
-  --sub-text: #8e8f99;
+  --bg-light: #ffffff;
+  --bg-shaded: #f7f7f7;
+  --bg-dark: #191c26;
+  --title: #303030;
+  --text: #555555;
   --alt-title: #ffffff;
-  --alt-text: #f4f4fd;
+  --alt-text: #9da4bd;
+  --highlight: #ff6c00;
 }
 
 [data-theme='dark'] {
   --title: var(--alt-title);
   --text: var(--alt-text);
+  --bg-light: var(--title);
+  --bg-shaded: var(--bg-dark);
+  --bg-dark: var(--bg-light);
 }
 
 body {
