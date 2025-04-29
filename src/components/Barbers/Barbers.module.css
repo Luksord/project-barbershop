@@ -36,3 +36,41 @@
   letter-spacing: 5%;
   margin-bottom: 45px;
 }
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 264px;
+}
+
+.mediaContainer {
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--iris);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialLink:hover,
+.socialLink:focus,
+.socialLink:active {
+  background-color: var(--ocean);
+}
+
+.socialIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--cloud);
+}
