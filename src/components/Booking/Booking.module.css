@@ -1,0 +1,86 @@
+.section {
+  padding: 85px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-dark);
+}
+
+.title {
+  color: var(--alt-title);
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 5%;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  color: var(--alt-title);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 10%;
+  padding: 12px 0 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--alt-text);
+  background: transparent;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: var(--alt-title);
+  color: var(--alt-title);
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 16px;
+  color: var(--alt-text);
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+/* Kiedy input jest aktywny lub zawiera tekst, label się przesuwa i zmniejsza */
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--alt-title);
+}
+
+/* Button */
+.button {
+  color: var(--alt-title);
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 9%;
+  padding: 12px 20px;
+  max-width: 160px;
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #ddd;
+}

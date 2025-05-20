@@ -137,6 +137,7 @@ export const Barbers = () => {
         {barbers.map(({ img, img2x, alt, name, role, socialLinks }, index) => (
           <li className={css.barberContainer}>
             <img
+              key={index}
               src={img}
               srcSet={`${img} 1x, ${img2x} 2x`}
               alt={alt}
