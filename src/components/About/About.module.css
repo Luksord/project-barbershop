@@ -5,6 +5,59 @@
   justify-content: center;
   background-color: var(--bg-light);
 }
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 40px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding: 120px 215px;
+  }
+}
+
+.imagesContainer {
+  margin-right: 30px;
+}
+
+.tablet {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .tablet {
+    display: none;
+  }
+}
+
+.desktop {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media screen and (max-width: 1599px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .informationContainer {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .informationContainer {
+    width: 470px;
+  }
+}
 
 .subtextWrapper {
   display: flex;
@@ -36,6 +89,11 @@
   letter-spacing: 5%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
+}
 
 .text {
   color: var(--text);
@@ -45,6 +103,11 @@
   letter-spacing: 2%;
   line-height: 26px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 18px;
+  }
 }
 
 .button {
@@ -59,4 +122,11 @@
   background-color: var(--bg-light);
   border: 1px solid var(--highlight);
   border-radius: 25px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--alt-title);
+  background-color: var(--highlight);
+  cursor: pointer;
 }

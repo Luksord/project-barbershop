@@ -3,15 +3,17 @@ import css from './WhyUs.module.css';
 export const WhyUs = () => {
   return (
     <div className={css.section}>
-      <div className={css.subtextWrapper}>
-        <div className={css.line} />
-        <p className={css.subtext}>Old traditional school</p>
+      <div className={css.textContainer}>
+        <div className={css.subtextWrapper}>
+          <div className={css.line} />
+          <p className={css.subtext}>Old traditional school</p>
+        </div>
+        <h2 className={css.title}>Why people come to us?</h2>
+        <p className={css.text}>
+          Only good things are said about us. But it's better to see and feel 1
+          time than read 10 times.
+        </p>
       </div>
-      <h2 className={css.title}>Why people come to us?</h2>
-      <p className={css.text}>
-        Only good things are said about us. But it's better to see and feel 1
-        time than read 10 times.
-      </p>
       <div className={css.statsGrid}>
         <div className={`${css.statBox} ${css.boxOne}`}>
           <div className={css.statWrapper}>

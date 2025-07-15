@@ -5,6 +5,18 @@
   justify-content: center;
   background-color: var(--bg-light);
 }
+@media screen and (min-width: 1600px) {
+  .section {
+    flex-direction: row-reverse;
+    gap: 130px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .textContainer {
+    max-width: 500px;
+  }
+}
 
 .subtextWrapper {
   display: flex;
@@ -36,6 +48,11 @@
   letter-spacing: 5%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
+}
 
 .text {
   color: var(--text);
@@ -49,8 +66,15 @@
 
 .statsGrid {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1600px) {
+  .statsGrid {
+    margin: 0;
+  }
 }
 
 .boxOne {

@@ -9,6 +9,64 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding: 120px 215px;
+  }
+}
+
+.pricesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 690px;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 767px) {
+  .pricesContainer {
+    display: none;
+  }
+}
+
+/* wspólny styl dla bloków cen */
+.blockLeft,
+.blockRight {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 32px 34px;
+  color: var(--alt-text);
+}
+
+/* ciemniejszy prawy blok */
+.blockRight {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.priceBlock {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* desktop – dwa bloki w rzędzie */
+@media screen and (min-width: 1600px) {
+  .pricesWrapper {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .blockLeft,
+  .blockRight {
+    width: 50%;
+    margin-top: 0;
+  }
+}
 
 .subtextWrapper {
   display: flex;
@@ -39,6 +97,16 @@
   font-weight: 700;
   letter-spacing: 5%;
   margin-bottom: 575px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
 }
 
 .buttonWrapper {

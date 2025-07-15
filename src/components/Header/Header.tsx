@@ -5,10 +5,12 @@ import bg2 from '../../assets/images/slider-img-2.jpg';
 import bg3 from '../../assets/images/slider-img-3.jpg';
 import Logo from '../../assets/images/icons.svg#icon-logo.svg';
 import Menu from '../../assets/images/icons.svg#menu-toggle.svg';
+import { ModalMenu } from '../ModalMenu/ModalMenu';
 
 export const Header = () => {
   const [bgIndex, setBgIndex] = useState(0);
   const backgrounds = [bg1, bg2, bg3];
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
     <div
@@ -19,10 +21,11 @@ export const Header = () => {
         <svg className={css.logo}>
           <use href={Logo} />
         </svg>
-        <svg className={css.menu}>
+        <svg className={css.menu} onClick={() => setMenuOpen(true)}>
           <use href={Menu} />
         </svg>
       </div>
+      <ModalMenu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
       <div className={css.subtextWrapper}>
         <div className={css.line} />
         <p className={css.subtext}>A hair salon for men in Kyiv</p>

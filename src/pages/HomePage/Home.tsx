@@ -13,13 +13,21 @@ export const Home = () => {
   return (
     <main className={css.page}>
       <Header />
-      <About />
-      <Services />
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
       <WhyUs />
-      <Barbers />
+      <div id="barbers">
+        <Barbers />
+      </div>
       <Gallery />
       <Booking />
-      <Contacts />
+      <div id="contacts">
+        <Contacts />
+      </div>
       <Footer />
     </main>
   );
