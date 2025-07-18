@@ -19,6 +19,7 @@ export const About = () => {
             alt="Neck shave"
             width="330"
             height="235"
+            loading="lazy"
           />
           <img
             src={tab_img2x1}
@@ -26,6 +27,7 @@ export const About = () => {
             alt="Nape shave"
             width="330"
             height="235"
+            loading="lazy"
           />
         </div>
         <div className={css.desktop}>
@@ -35,6 +37,7 @@ export const About = () => {
             alt="Neck shave"
             width="270"
             height="445"
+            loading="lazy"
           />
           <img
             src={tab_img2x1}
@@ -42,6 +45,7 @@ export const About = () => {
             alt="Nape shave"
             width="270"
             height="445"
+            loading="lazy"
           />
         </div>
       </div>

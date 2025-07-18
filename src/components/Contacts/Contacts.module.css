@@ -4,10 +4,42 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--bg-dark);
-  background-image: url('../../assets/images/barbershop@1x.png');
+  background-image: image-set(
+    url('../../assets/images/contacts-bg-mob@1x.png') 1x,
+    url('../../assets/images/contacts-bg-mob@2x.png') 2x
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 40px;
+    background-image: image-set(
+      url('../../assets/images/contacts-bg-tab@1x.png') 1x,
+      url('../../assets/images/contacts-bg-tab@2x.png') 2x
+    );
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding: 120px 100px;
+    width: 800px;
+    height: 630px;
+    justify-content: flex-start;
+    background-image: image-set(
+      url('../../assets/images/contacts-bg-desk@1x.png') 1x,
+      url('../../assets/images/contacts-bg-desk@2x.png') 2x
+    );
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 
 .subtextWrapper {
@@ -26,7 +58,7 @@
 .subtext {
   color: var(--alt-title);
   text-transform: uppercase;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -40,10 +72,15 @@
   letter-spacing: 5%;
   margin-bottom: 45px;
 }
+@media screen and (min-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
+}
 
 .text {
   color: var(--alt-text);
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2%;
@@ -55,6 +92,16 @@
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .contactsContainer {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contactsContainer {
+    margin-bottom: 72px;
+  }
 }
 
 .contactWrapper {

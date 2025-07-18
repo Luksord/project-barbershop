@@ -32,7 +32,7 @@
 .subtext {
   color: var(--title);
   text-transform: uppercase;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -46,13 +46,14 @@
 }
 @media screen and (min-width: 768px) {
   .galleryList {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1600px) {
   .galleryList {
+    display: flex;
     flex-direction: row;
   }
 }

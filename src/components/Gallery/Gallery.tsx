@@ -106,7 +106,12 @@ export const Gallery = () => {
                 media="(max-width: 767px)"
                 srcSet={`${images.mobile} 1x, ${images.mobile2x} 2x`}
               />
-              <img src={images.desktop} alt={alt} className={css.image} />
+              <img
+                src={images.desktop}
+                alt={alt}
+                className={css.image}
+                loading="lazy"
+              />
             </picture>
           </li>
         ))}

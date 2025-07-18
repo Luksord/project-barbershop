@@ -24,9 +24,11 @@ export const Home = () => {
         <Barbers />
       </div>
       <Gallery />
-      <Booking />
-      <div id="contacts">
-        <Contacts />
+      <div className={css.flexContainer}>
+        <Booking />
+        <div id="contacts">
+          <Contacts />
+        </div>
       </div>
       <Footer />
     </main>
