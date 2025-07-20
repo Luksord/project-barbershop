@@ -25,7 +25,9 @@ export const Home = () => {
       </div>
       <Gallery />
       <div className={css.flexContainer}>
-        <Booking />
+        <div id="booking">
+          <Booking />
+        </div>
         <div id="contacts">
           <Contacts />
         </div>

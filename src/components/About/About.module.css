@@ -14,6 +14,7 @@
 @media screen and (min-width: 1600px) {
   .section {
     padding: 120px 215px;
+    justify-content: flex-start;
   }
 }
 
@@ -75,7 +76,7 @@
 .subtext {
   color: var(--title);
   text-transform: uppercase;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -97,7 +98,7 @@
 
 .text {
   color: var(--text);
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2%;
@@ -111,17 +112,20 @@
 }
 
 .button {
+  padding: 12px 20px;
+  max-width: 160px;
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+  border-radius: 25px;
+}
+
+.btnLink {
   color: var(--title);
-  text-transform: capitalize;
-  font-family: Open Sans;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 9%;
-  padding: 12px 20px;
-  max-width: 160px;
-  background-color: var(--bg-light);
-  border: 1px solid var(--highlight);
-  border-radius: 25px;
 }
 
 .button:hover,

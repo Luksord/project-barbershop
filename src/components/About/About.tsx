@@ -69,7 +69,9 @@ export const About = () => {
           everyone who comes to us!
         </p>
         <button type="button" className={css.button}>
-          online-booking
+          <a href="#booking" className={css.btnLink}>
+            online-booking
+          </a>
         </button>
       </div>
     </div>

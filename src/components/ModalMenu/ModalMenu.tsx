@@ -35,12 +35,14 @@ export const ModalMenu = ({
 
       <div className={css.socialContainer}>
         <div className={css.line} />
-        <a href="https://instagram.com/barbershop" className={css.link}>
-          <p className={css.subtext}>Instagram</p>
-        </a>
-        <a href="https://youtube.com/barbershop" className={css.link}>
-          <p className={css.subtext}>Youtube</p>
-        </a>
+        <div className={css.socialLinks}>
+          <a href="https://instagram.com/barbershop" className={css.link}>
+            <p className={css.subtext}>Instagram</p>
+          </a>
+          <a href="https://youtube.com/barbershop" className={css.link}>
+            <p className={css.subtext}>Youtube</p>
+          </a>
+        </div>
       </div>
     </div>
   );

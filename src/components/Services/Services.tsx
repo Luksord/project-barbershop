@@ -90,7 +90,9 @@ export const Services = () => {
       </div>
       <div className={css.buttonWrapper}>
         <button type="button" className={css.button}>
-          online-booking
+          <a href="#booking" className={css.btnLink}>
+            online-booking
+          </a>
         </button>
       </div>
     </div>

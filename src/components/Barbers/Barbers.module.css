@@ -32,7 +32,7 @@
 .subtext {
   color: var(--title);
   text-transform: uppercase;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -93,7 +93,7 @@
 
 .name {
   color: var(--title);
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2%;
@@ -102,7 +102,7 @@
 
 .role {
   color: var(--highlight);
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2%;

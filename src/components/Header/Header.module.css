@@ -1,23 +1,107 @@
 .section {
+  color: var(--bg-light);
+  display: flex;
+  flex-direction: row;
+}
+
+.background {
+  width: 100%;
   padding: 200px 30px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--bg-dark);
-  background-image: url('../../assets/images/slider-img-1.jpg');
+  background-image: image-set(
+    url('../../assets/images/slider-img-1_mob@1x.jpg') 1x,
+    url('../../assets/images/slider-img-1_mob@2x.jpg') 2x
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .background {
+    padding: 270px 110px 230px 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .background {
+    padding: 270px 530px 210px 100px;
+    width: 1070px;
+    height: 680px;
+  }
+}
 
-.nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  pointer-events: none;
+.marginLeft {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .marginLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--bg-light);
+    padding-top: 30px;
+    padding-right: 50px;
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .marginLeft {
+    padding-top: 20px;
+    padding-right: 25px;
+    margin-left: 215px;
+  }
+}
+
+.marginSubtextWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+}
+
+.marginLogo {
+  width: 70px;
+  height: 56px;
+  color: var(--alt-title);
+  cursor: pointer;
+  pointer-events: auto;
+}
+@media screen and (min-width: 1600px) {
+  .marginLogo {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+.marginLine {
+  width: 1px;
+  height: 60px;
+  background-color: var(--title);
+}
+
+.marginSubtext {
+  color: var(--title);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 20%;
+}
+
+.marginSubtext:hover {
+  color: var(--highlight);
+}
+
+.marginLogo {
+  align-self: center;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .logo {
@@ -31,7 +115,21 @@
   pointer-events: auto;
 }
 
-.menu {
+.navMobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+}
+@media screen and (min-width: 767px) {
+  .navMobile {
+    display: none;
+  }
+}
+
+.mobileMenu {
   position: absolute;
   top: 48px;
   right: 30px;
@@ -40,6 +138,102 @@
   color: var(--alt-title);
   cursor: pointer;
   pointer-events: auto;
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nav {
+    padding: 50px 100px;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (min-width: 1600px) {
+  .navList {
+    gap: 30px;
+  }
+}
+
+.navItem {
+  color: var(--alt-title);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.navItem:hover {
+  font-size: 14px;
+  color: var(--highlight);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1600px) {
+  .buttonWrapper {
+    gap: 40px;
+  }
+}
+
+.tel {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .tel {
+    display: block;
+    color: var(--alt-title);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+
+.button {
+  padding: 12px 20px;
+  max-width: 160px;
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+  border-radius: 25px;
+}
+
+.btnLink {
+  color: var(--alt-title);
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 9%;
 }
 
 .subtextWrapper {
@@ -58,7 +252,7 @@
 .subtext {
   color: var(--alt-text);
   text-transform: uppercase;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0;
@@ -72,6 +266,11 @@
   letter-spacing: 5%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1600px) {
+  .title {
+    font-size: 72px;
+  }
+}
 
 .textWrapper {
   display: flex;
@@ -80,7 +279,7 @@
 
 .text {
   color: var(--alt-text);
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2%;

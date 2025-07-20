@@ -26,13 +26,17 @@ export const Contacts = () => {
             <svg className={css.icon}>
               <use href={PhoneIcon} />
             </svg>
-            <p className={css.text}>+38 044 111 11 11</p>
+            <a href="tel:+38 044 111 11 11" className={css.text}>
+              +38 044 111 11 11
+            </a>
           </div>
           <div className={css.contactWrapper}>
             <svg className={css.icon}>
               <use href={MailIcon} />
             </svg>
-            <p className={css.text}>barbershop@email.com</p>
+            <a href="mailto:barbershop@email.com" className={css.text}>
+              barbershop@email.com
+            </a>
           </div>
         </div>
         <div className={css.hoursContainer}>

@@ -169,15 +169,25 @@
 }
 
 .button {
-  color: var(--alt-title);
-  text-transform: capitalize;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 9%;
   padding: 12px 20px;
   max-width: 160px;
   background-color: transparent;
   border: 1px solid var(--highlight);
   border-radius: 25px;
+}
+
+.btnLink {
+  color: var(--alt-title);
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 9%;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--alt-title);
+  background-color: var(--highlight);
+  cursor: pointer;
 }
