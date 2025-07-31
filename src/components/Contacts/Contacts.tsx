@@ -2,6 +2,7 @@ import css from './Contacts.module.css';
 import MapPinIcon from '../../assets/images/icons.svg#icon-map-pin.svg';
 import PhoneIcon from '../../assets/images/icons.svg#icon-phone.svg';
 import MailIcon from '../../assets/images/icons.svg#icon-mail.svg';
+import { contact } from '../../utils/contactData';
 
 export const Contacts = () => {
   return (
@@ -26,16 +27,16 @@ export const Contacts = () => {
             <svg className={css.icon}>
               <use href={PhoneIcon} />
             </svg>
-            <a href="tel:+38 044 111 11 11" className={css.text}>
-              +38 044 111 11 11
+            <a href={contact.phoneHref} className={css.text}>
+              {contact.phone}
             </a>
           </div>
           <div className={css.contactWrapper}>
             <svg className={css.icon}>
               <use href={MailIcon} />
             </svg>
-            <a href="mailto:barbershop@email.com" className={css.text}>
-              barbershop@email.com
+            <a href={contact.emailHref} className={css.text}>
+              {contact.email}
             </a>
           </div>
         </div>

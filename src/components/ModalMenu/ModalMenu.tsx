@@ -1,4 +1,7 @@
 import css from './ModalMenu.module.css';
+import { menu } from './../../utils/navData';
+import { contact } from '../../utils/contactData';
+import { media } from '../../utils/contactData';
 
 export const ModalMenu = ({
   isOpen,
@@ -13,34 +16,37 @@ export const ModalMenu = ({
         ✕
       </button>
 
-      <nav className={css.navContainer}>
-        <a href="#about" onClick={onClose}>
-          <p className={css.text}>About</p>
-        </a>
-        <a href="#services" onClick={onClose}>
-          <p className={css.text}>Services and Prices</p>
-        </a>
-        <a href="#barbers" onClick={onClose}>
-          <p className={css.text}>Barbers</p>
-        </a>
-        <a href="#contacts" onClick={onClose}>
-          <p className={css.text}>Contacts</p>
-        </a>
-      </nav>
+      <div className={css.menuContainer}>
+        <ul className={css.menuList}>
+          {menu.map(({ navName, navLink }) => (
+            <li key={navName}>
+              <a href={navLink} onClick={onClose} className={css.menuItem}>
+                {navName}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className={css.contactContainer}>
-        <p className={css.text}>+38 044 111 11 11</p>
-        <button className={css.button}>Online Booking</button>
+        <a href={contact.phoneHref} className={css.menuItem}>
+          {contact.phone}
+        </a>
+        <button type="button" className={css.button}>
+          <a href="#booking" onClick={onClose} className={css.btnLink}>
+            online-booking
+          </a>
+        </button>
       </div>
 
       <div className={css.socialContainer}>
         <div className={css.line} />
         <div className={css.socialLinks}>
-          <a href="https://instagram.com/barbershop" className={css.link}>
-            <p className={css.subtext}>Instagram</p>
+          <a href={media.instagramHref} className={css.subtext}>
+            {media.instagram}
           </a>
-          <a href="https://youtube.com/barbershop" className={css.link}>
-            <p className={css.subtext}>Youtube</p>
+          <a href={media.youtubeHref} className={css.subtext}>
+            {media.youtube}
           </a>
         </div>
       </div>

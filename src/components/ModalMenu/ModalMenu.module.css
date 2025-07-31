@@ -29,23 +29,24 @@
   cursor: pointer;
 }
 
-.navContainer {
+.menuList {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 60px;
 }
 
-.text {
+.menuItem {
   color: var(--title);
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 10%;
   line-height: 100%;
+  text-decoration: none;
 }
 
-.text:hover {
+.menuItem:hover {
   color: var(--highlight);
 }
 
@@ -60,17 +61,20 @@
 }
 
 .button {
-  color: var(--title);
-  background-color: var(--bg-light);
-  border: 1px solid var(--highlight);
-  border-radius: 25px;
   padding: 12px 20px;
   max-width: 160px;
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+  border-radius: 25px;
+}
+
+.btnLink {
+  color: var(--title);
+  text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 9%;
-  text-transform: uppercase;
 }
 
 .socialContainer {

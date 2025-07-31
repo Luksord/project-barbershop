@@ -1,0 +1,130 @@
+.navMobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  pointer-events: none;
+}
+@media screen and (min-width: 767px) {
+  .navMobile {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+  width: 24px;
+  height: 16px;
+  color: var(--alt-title);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 70px;
+  height: 56px;
+  color: var(--alt-title);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nav {
+    padding: 50px 100px;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (min-width: 1600px) {
+  .navList {
+    gap: 30px;
+  }
+}
+
+.navItem {
+  color: var(--alt-title);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.navItem:hover {
+  color: var(--highlight);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1600px) {
+  .buttonWrapper {
+    gap: 40px;
+  }
+}
+
+.tel {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .tel {
+    display: block;
+    color: var(--alt-title);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+
+.button {
+  padding: 12px 20px;
+  max-width: 160px;
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+  border-radius: 25px;
+}
+
+.btnLink {
+  color: var(--alt-title);
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 9%;
+}
