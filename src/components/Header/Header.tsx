@@ -14,7 +14,6 @@ import desk3x1 from '../../assets/images/slider-img-3_desk@1x.jpg';
 import desk3x2 from '../../assets/images/slider-img-3_desk@2x.jpg';
 import { Sidebar } from './Sidebar/Sidebar';
 import { Nav } from './Nav/Nav';
-// import { Slider } from './Slider/Slider';
 
 interface RatinaSet {
   '1x': string;
