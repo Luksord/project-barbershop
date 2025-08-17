@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-barbershop/static/css/main.a9dd3c23.css",
+    "main.js": "/project-barbershop/static/js/main.a73531d8.js",
+    "index.html": "/project-barbershop/index.html",
+    "main.a9dd3c23.css.map": "/project-barbershop/static/css/main.a9dd3c23.css.map",
+    "main.a73531d8.js.map": "/project-barbershop/static/js/main.a73531d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9dd3c23.css",
+    "static/js/main.a73531d8.js"
+  ]
+}
