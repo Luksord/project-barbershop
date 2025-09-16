@@ -20,14 +20,14 @@ import AlanBlackDesktopX2 from '../assets/images/alanblack-desktop@2.jpg';
 // import TwitterIcon from '../assets/images/icons.svg#icon-social-twitter.svg';
 // import FacebookIcon from '../assets/images/icons.svg#icon-social-facebook.svg';
 // import LinkedinIcon from '../assets/images/icons.svg#icon-social-linkedin.svg';
-import InstagramIcon from '../assets/icons/icon-social-instagram.svg';
-import TwitterIcon from '../assets/icons/icon-social-twitter.svg';
-import FacebookIcon from '../assets/icons/icon-social-facebook.svg';
-import LinkedinIcon from '../assets/icons/icon-social-linkedin.svg';
+import { ReactComponent as InstagramIcon } from '../assets/icons/icon-social-instagram.svg';
+import { ReactComponent as TwitterIcon } from '../assets/icons/icon-social-twitter.svg';
+import { ReactComponent as FacebookIcon } from '../assets/icons/icon-social-facebook.svg';
+import { ReactComponent as LinkedinIcon } from '../assets/icons/icon-social-linkedin.svg';
 
 export interface SocialLinkProps {
   href: string;
-  icon: string;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
   alt: string;
 }
 
