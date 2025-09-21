@@ -32,7 +32,7 @@
 .logo {
   width: 70px;
   height: 56px;
-  color: var(--alt-title);
+  color: var(--title);
   cursor: pointer;
   pointer-events: auto;
   align-self: center;

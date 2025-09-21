@@ -125,20 +125,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialLink:hover,
-.socialLink:focus,
-.socialLink:active {
-  background-color: var(--ocean);
-}
-
-.socialIcon {
+.icon {
   width: 20px;
   height: 20px;
-  fill: var(--title);
+  color: var(--title);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socialLink:hover,
-.socialLink:focus,
-.socialLink:active {
-  fill: var(--highlight);
+.socialLink:hover .icon,
+.socialLink:focus .icon {
+  color: var(--highlight);
 }

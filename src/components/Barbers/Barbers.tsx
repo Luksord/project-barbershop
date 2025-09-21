@@ -1,11 +1,10 @@
 import css from './Barbers.module.css';
-import { barbers } from './../../utils/barbersData';
-import { SocialLinkProps } from './../../utils/barbersData';
+import { barbers, SocialLinkProps } from './../../utils/barbersData';
 
 const SocialLink = ({ href, icon: Icon, alt }: SocialLinkProps) => (
   <li className={css.linkContainer}>
     <a href={href} className={css.socialLink} aria-label={alt}>
-      <Icon className={css.socialIcon} />
+      <Icon className={css.icon} />
     </a>
   </li>
 );

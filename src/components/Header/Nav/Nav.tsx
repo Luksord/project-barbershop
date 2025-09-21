@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import css from './Nav.module.css';
-import Logo from '../../../assets/images/icons.svg#icon-logo.svg';
-import Menu from '../../../assets/images/icons.svg#menu-toggle.svg';
+import { ReactComponent as Logo } from '../../../assets/icons/icon-logo.svg';
+import { ReactComponent as Menu } from '../../../assets/icons/icon-menu-toggle.svg';
 import { menu } from './../../../utils/navData';
 import { ModalMenu } from '../../ModalMenu/ModalMenu';
 import { contact } from '../../../utils/contactData';
@@ -12,12 +12,8 @@ export const Nav = () => {
   return (
     <div>
       <div className={css.navMobile}>
-        <svg className={css.logo}>
-          <use href={Logo} />
-        </svg>
-        <svg className={css.mobileMenu} onClick={() => setMenuOpen(true)}>
-          <use href={Menu} />
-        </svg>
+        <Logo className={css.logo} />
+        <Menu className={css.mobileMenu} onClick={() => setMenuOpen(true)} />
       </div>
       <div className={css.nav}>
         <div className={css.menuContainer}>

@@ -1,5 +1,6 @@
 import css from './Footer.module.css';
 import { media } from '../../utils/contactData';
+import { ReactComponent as CopyrightIcon } from '../../assets/icons/icon-copyright.svg';
 
 export const Footer = () => {
   return (
@@ -14,9 +15,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className={css.textWrapper}>
-        <svg className={css.icon}>
-          <use />
-        </svg>
+        <CopyrightIcon className={css.icon} />
         <p className={css.text}>Copyright 2020</p>
       </div>
     </div>

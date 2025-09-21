@@ -1,7 +1,7 @@
 import css from './Contacts.module.css';
-import MapPinIcon from '../../assets/images/icons.svg#icon-map-pin.svg';
-import PhoneIcon from '../../assets/images/icons.svg#icon-phone.svg';
-import MailIcon from '../../assets/images/icons.svg#icon-mail.svg';
+import { ReactComponent as MapPinIcon } from '../../assets/icons/icon-map-pin.svg';
+import { ReactComponent as PhoneIcon } from '../../assets/icons/icon-phone.svg';
+import { ReactComponent as MailIcon } from '../../assets/icons/icon-mail.svg';
 import { contact } from '../../utils/contactData';
 
 export const Contacts = () => {
@@ -11,9 +11,7 @@ export const Contacts = () => {
       <div className={css.flexContainer}>
         <div className={css.contactsContainer}>
           <div className={css.contactWrapper}>
-            <svg className={css.icon}>
-              <use href={MapPinIcon} />
-            </svg>
+            <MapPinIcon className={css.icon} />
             <div>
               <p className={css.text} style={{ fontWeight: '700' }}>
                 st. Vasylkivska, 7A
@@ -24,17 +22,13 @@ export const Contacts = () => {
             </div>
           </div>
           <div className={css.contactWrapper}>
-            <svg className={css.icon}>
-              <use href={PhoneIcon} />
-            </svg>
+            <PhoneIcon className={css.icon} />
             <a href={contact.phoneHref} className={css.text}>
               {contact.phone}
             </a>
           </div>
           <div className={css.contactWrapper}>
-            <svg className={css.icon}>
-              <use href={MailIcon} />
-            </svg>
+            <MailIcon className={css.icon} />
             <a href={contact.emailHref} className={css.text}>
               {contact.email}
             </a>

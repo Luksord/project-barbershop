@@ -4,22 +4,21 @@ import JohnSmithTablet from '../assets/images/johnsmith-tablet.jpg';
 import JohnSmithTabletX2 from '../assets/images/johnsmith-tablet@2.jpg';
 import JohnSmithDesktop from '../assets/images/johnsmith-desktop.jpg';
 import JohnSmithDesktopX2 from '../assets/images/johnsmith-desktop@2.jpg';
+
 import MicheleDoeMobile from '../assets/images/micheledoe-mobile.jpg';
 import MicheleDoeMobileX2 from '../assets/images/micheledoe-mobile@2x.jpg';
 import MicheleDoeTablet from '../assets/images/micheledoe-tablet.jpg';
 import MicheleDoeTabletX2 from '../assets/images/micheledoe-tablet@2.jpg';
 import MicheleDoeDesktop from '../assets/images/micheledoe-desktop.jpg';
 import MicheleDoeDesktopX2 from '../assets/images/micheledoe-desktop@2.jpg';
+
 import AlanBlackMobile from '../assets/images/alanblack-mobile.jpg';
 import AlanBlackMobileX2 from '../assets/images/alanblack-mobile@2x.jpg';
 import AlanBlackTablet from '../assets/images/alanblack-tablet.jpg';
 import AlanBlackTabletX2 from '../assets/images/alanblack-tablet@2.jpg';
 import AlanBlackDesktop from '../assets/images/alanblack-desktop.jpg';
 import AlanBlackDesktopX2 from '../assets/images/alanblack-desktop@2.jpg';
-// import InstagramIcon from '../assets/images/icons.svg#icon-social-twitter.svg';
-// import TwitterIcon from '../assets/images/icons.svg#icon-social-twitter.svg';
-// import FacebookIcon from '../assets/images/icons.svg#icon-social-facebook.svg';
-// import LinkedinIcon from '../assets/images/icons.svg#icon-social-linkedin.svg';
+
 import { ReactComponent as InstagramIcon } from '../assets/icons/icon-social-instagram.svg';
 import { ReactComponent as TwitterIcon } from '../assets/icons/icon-social-twitter.svg';
 import { ReactComponent as FacebookIcon } from '../assets/icons/icon-social-facebook.svg';
@@ -31,7 +30,7 @@ export interface SocialLinkProps {
   alt: string;
 }
 
-interface barbersProps {
+interface BarberProps {
   images: {
     mobile: string;
     mobile2x: string;
@@ -46,7 +45,7 @@ interface barbersProps {
   socialLinks: SocialLinkProps[];
 }
 
-export const barbers: barbersProps[] = [
+export const barbers: BarberProps[] = [
   {
     images: {
       mobile: JohnSmithMobile,
@@ -56,7 +55,7 @@ export const barbers: barbersProps[] = [
       desktop: JohnSmithDesktop,
       desktop2x: JohnSmithDesktopX2,
     },
-    alt: 'man with slick dark hair, ear hole and heavely tattooed right arm',
+    alt: 'man with slick dark hair, ear hole and heavily tattooed right arm',
     name: 'John Smith',
     role: 'Extreme Barber',
     socialLinks: [
