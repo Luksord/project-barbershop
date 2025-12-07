@@ -75,11 +75,12 @@
 
 .navItem {
   color: var(--alt-title);
-  text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navItem:hover {

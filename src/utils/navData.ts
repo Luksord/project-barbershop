@@ -12,13 +12,3 @@ export const menu: MenuProps[] = [
   },
   { navName: 'Contacts', navLink: '#contacts' },
 ];
-
-interface ContactProps {
-  Name: string;
-  Link: string;
-}
-
-export const contact: ContactProps[] = [
-  { Name: 'Instagram', Link: 'https://instagram.com/barbershop' },
-  { Name: 'Youtube', Link: 'https://youtube.com/barbershop' },
-];
