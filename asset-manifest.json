@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-barbershop/static/css/main.9fa9ea1f.css",
-    "main.js": "/project-barbershop/static/js/main.033379f0.js",
+    "main.css": "/project-barbershop/static/css/main.44abcdd0.css",
+    "main.js": "/project-barbershop/static/js/main.2af2b628.js",
     "static/media/contacts-bg-desk@2x.png": "/project-barbershop/static/media/contacts-bg-desk@2x.3332360a8b1feac26e24.png",
     "static/media/slider-img-3_desk@2x.jpg": "/project-barbershop/static/media/slider-img-3_desk@2x.7a18fee8e9c3e26e2830.jpg",
     "static/media/contacts-bg-tab@2x.png": "/project-barbershop/static/media/contacts-bg-tab@2x.599b0bc341de3b5a77a2.png",
@@ -76,13 +76,22 @@
     "static/media/img-2_desk@1x.jpg": "/project-barbershop/static/media/img-2_desk@1x.90b135611a2c21e558ee.jpg",
     "static/media/img-2_tab@1x.jpg": "/project-barbershop/static/media/img-2_tab@1x.732ff38a670d8fe40461.jpg",
     "static/media/slider-img-2_desk@1x.jpg": "/project-barbershop/static/media/slider-img-2_desk@1x.b0d62e20930380e3e814.jpg",
-    "static/media/icons.svg#icon-map-pin.svg": "/project-barbershop/static/media/icons.04c128a22352316d276caa8590fa45ce.svg",
+    "static/media/icon-logo.svg": "/project-barbershop/static/media/icon-logo.4996a0bff60f31f7e618d2ce25c35411.svg",
+    "static/media/icon-social-instagram.svg": "/project-barbershop/static/media/icon-social-instagram.5aaad5913a4ae7d3b451801134f05969.svg",
+    "static/media/icon-phone.svg": "/project-barbershop/static/media/icon-phone.dc373617c45437716d37f6a1e28619a4.svg",
+    "static/media/icon-map-pin.svg": "/project-barbershop/static/media/icon-map-pin.609fa3b2033938c75fe946bc5023f6e0.svg",
     "index.html": "/project-barbershop/index.html",
-    "main.9fa9ea1f.css.map": "/project-barbershop/static/css/main.9fa9ea1f.css.map",
-    "main.033379f0.js.map": "/project-barbershop/static/js/main.033379f0.js.map"
+    "static/media/icon-social-twitter.svg": "/project-barbershop/static/media/icon-social-twitter.5a209cd1c823c9b4c4e8e346e6d8e575.svg",
+    "static/media/icon-mail.svg": "/project-barbershop/static/media/icon-mail.19b3cf482db14cafa6fe6f7cdbd9969d.svg",
+    "static/media/icon-copyright.svg": "/project-barbershop/static/media/icon-copyright.634fee32a5f365cacc3b0e64ae0998b6.svg",
+    "static/media/icon-social-linkedin.svg": "/project-barbershop/static/media/icon-social-linkedin.5d7636fb6fa5d2b021be9b9f58a4954e.svg",
+    "static/media/icon-social-facebook.svg": "/project-barbershop/static/media/icon-social-facebook.62b875272176fa4fae3e09c1cfe160a9.svg",
+    "static/media/icon-menu-toggle.svg": "/project-barbershop/static/media/icon-menu-toggle.a6a8c721389ac353bf5f5764a71ec666.svg",
+    "main.44abcdd0.css.map": "/project-barbershop/static/css/main.44abcdd0.css.map",
+    "main.2af2b628.js.map": "/project-barbershop/static/js/main.2af2b628.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fa9ea1f.css",
-    "static/js/main.033379f0.js"
+    "static/css/main.44abcdd0.css",
+    "static/js/main.2af2b628.js"
   ]
 }
